@@ -1,4 +1,4 @@
-name: 'Other Hello World'
+name: 'Hello World - Action Two'
 description: 'Greet someone'
 inputs:
   who-to-greet:  # id of input
@@ -12,7 +12,7 @@ outputs:
 runs:
   using: "composite"
   steps:
-    - run: echo Other Hello ${{ inputs.who-to-greet }}.
+    - run: echo "Hello Two ${{ inputs.who-to-greet }}"
       shell: bash
     - id: random-number-generator
       run: echo "::set-output name=random-id::$(echo $RANDOM)"
