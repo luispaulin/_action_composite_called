@@ -27,3 +27,7 @@ runs:
       shell: bash
     - run: python --version
       shell: bash
+    - run: python ${{ github.action_path }}/../../print_secret_use.py
+      shell: bash
+      env:
+        MY_SECRET: ${{ inputs.who-to-greet }}
