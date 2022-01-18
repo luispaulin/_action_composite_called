@@ -1,3 +1,4 @@
+# Some comment
 name: 'Tests'
 runs:
   using: "composite"
